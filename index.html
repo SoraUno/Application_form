@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="就職作品プレゼンテーション2020参加申し込みフォームです">
+    <title>就職作品プレゼンテーション2020参加申し込みフォーム</title>
+    <script src="js/script.js"></script>
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <img src="images/HALロゴ.png" alt="HALロゴ">
+    <h1 class="title">就職作品プレゼンテーション2020<br>参加申し込みフォーム</h1>
+</header>
+<main>
+    <section class="greeting">
+        <h1>ご挨拶</h1>
+        <p>この度は、HAL就職作品プレゼンテーションにご参加の申し込みをいただきありがとうございます。<br>
+        日頃の学習の成果をご覧いただき是非採用に向けて積極的にご検討くださいますようお願い致します。</p>
+    </section>
+
+    <section class="step_wrapper">
+        <h1 class="step_title">　登録方法について</h1>
+        <ol class="step">
+            <li><p class="step_num">STEP1</p><p>参加を希望する学校のタブを選択</p></li>
+            <li><p class="step_num">STEP2</p><p>各分野ごとに見学予定人数を入力</P></li>
+            <li><p class="step_num">STEP3</p><p>企業情報、ご担当者（代表者様）情報を入力</p></li>
+            <li class="is-current"><p class="step_num">STEP4</p><p>完了</p></li>
+        </ol>
+    </section>
+    <section class="attention">
+      <h1>ご注意</h1>
+      <p>複数の日程を一度に登録することは出来ません。
+        複数日程に参加いただく場合は、お手数ですが参加日程ごとに終了せずに連続で登録・確認及び送信してください。</p>
+  </section>
+    <!-- 開催校選択タブ -->
+    <p class="tab_text">　参加を希望する学校のタブを選択してください。</p>
+    <form class="tabs">
+        <input id="all" type="radio" name="tab_item" checked>
+        <label class="tab_item" for="all">
+            <img class="logo" src="images/HAL大阪ロゴ.png" alt="HAL大阪ロゴ">
+            <p>開催日：２月２日(金)</p></label>
+        <input id="programming" type="radio" name="tab_item">
+        <label class="tab_item" for="programming">
+            <img class="logo" src="images/HAL名古屋ロゴ.png" alt="HAL名古屋ロゴ">
+            <p>開催日：２月９日(金)</p></label>
+        <input id="design" type="radio" name="tab_item">
+        <label class="tab_item" for="design">
+            <img class="logo" src="images/HAL東京ロゴ.png" alt="HAL東京ロゴ">
+            <p>開催日：２月１５日(木)</p></label>
+        <input id="hal_tokyo2" type="radio" name="tab_item">
+        <label class="tab_item" for="hal_tokyo2">
+            <img class="logo" src="images/HAL東京ロゴ.png" alt="HAL東京ロゴ">
+            <p>開催日：２月１６日(金)</p></label>
+        <!-- HAL大阪 -->
+        <div class="tab_content" id="all_content">
+          <div class="tab_content_description">
+            <p class="c-txtsp">各分野ごとに、見学予定人数を入力してください。
+                <small>※一人の方が複数の分野を見学される場合は、各々の分野にのべ人数としてカウントしてください</small></p>
+          </div>
+          <table class="number_select_wrapper">
+              <tr>
+                <td>
+                    <section class="number_select">
+                      <p>ゲーム分野</p>
+                      <input type="number" name="game" min="0" max="3" value="0" step="1" required>名
+                    </section>
+                </td>
+                <td>
+                    <section class="number_select">
+                      <p>デジタル映像分野</p>
+                      <input type="number" name="digital_movie" min="0" max="3" value="0" step="1" required>名
+                    </section>
+                </td>
+                <td>
+                    <section class="number_select">
+                      <p>グラフィックデザイン分野</p>
+                      <input type="number" name="graphic_design" min="0" max="3" value="0" step="1" required>名
+                    </section>
+                </td>
+                <td>
+                    <section class="number_select">
+                      <p>サウンド分野</p>
+                      <input type="number" name="sound" min="0" max="3" value="0" step="1" required>名
+                    </section>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <section class="number_select">
+                      <p>情報処理システム分野</p>
+                      <input type="number" name="info_system" min="0" max="3" value="0" step="1" required>名
+                    </section>
+                </td>
+                <td>
+                    <section class="number_select">
+                        <p>WEB開発分野</p>
+                        <input type="number" name="web" min="0" max="3" value="0" step="1" required>名
+                    </section>
+                    </td>
+                    <td>
+                    <section class="number_select">
+                        <p>制御系システム分野</p>
+                        <input type="number" name="control_system" min="0" max="3" value="0" step="1" required>名
+                    </section>
+                    </td>
+                    <td>
+                    <section class="number_select">
+                        <p>カーデザイン分野</p>
+                        <input type="number" name="car_design" min="0" max="3" value="0" step="1" required>名
+                    </section>
+                </td>
+              </tr>
+          </table>
+          
+        </div>
+        <!-- HAL名古屋 -->
+        <div class="tab_content" id="programming_content">
+          <div class="tab_content_description">
+            <p class="c-txtsp">各分野ごとに、見学予定人数を入力してください。
+                <small>※一人の方が複数の分野を見学される場合は、各々の分野にのべ人数としてカウントしてください</small></p>
+          </div>
+          <table class="number_select_wrapper">
+            <tr>
+              <td>
+                  <section class="number_select">
+                    <p>ゲーム分野</p>
+                    <input type="number" name="game" min="0" max="3" value="0" step="1" required>名
+                  </section>
+              </td>
+              <td>
+                  <section class="number_select">
+                    <p>デジタル映像分野</p>
+                    <input type="number" name="digital_movie" min="0" max="3" value="0" step="1" required>名
+                  </section>
+              </td>
+              <td>
+                  <section class="number_select">
+                    <p>グラフィックデザイン分野</p>
+                    <input type="number" name="graphic_design" min="0" max="3" value="0" step="1" required>名
+                  </section>
+              </td>
+              <td>
+                  <section class="number_select">
+                    <p>サウンド分野</p>
+                    <input type="number" name="sound" min="0" max="3" value="0" step="1" required>名
+                  </section>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <section class="number_select">
+                    <p>情報処理システム分野</p>
+                    <input type="number" name="info_system" min="0" max="3" value="0" step="1" required>名
+                  </section>
+              </td>
+              <td>
+                  <section class="number_select">
+                      <p>WEB開発分野</p>
+                      <input type="number" name="web" min="0" max="3" value="0" step="1" required>名
+                  </section>
+                  </td>
+                  <td>
+                  <section class="number_select">
+                      <p>制御系システム分野</p>
+                      <input type="number" name="control_system" min="0" max="3" value="0" step="1" required>名
+                  </section>
+                  </td>
+                  <td>
+                  <section class="number_select">
+                      <p>カーデザイン分野</p>
+                      <input type="number" name="car_design" min="0" max="3" value="0" step="1" required>名
+                  </section>
+              </td>
+            </tr>
+        </table>
+        </div>
+        <!-- HAL東京1 -->
+        <div class="tab_content" id="design_content">
+          <div class="tab_content_description">
+            <p class="c-txtsp">各分野ごとに、見学予定人数を入力してください。
+                <small>※一人の方が複数の分野を見学される場合は、各々の分野にのべ人数としてカウントしてください</small></p>
+          </div>
+          <table class="number_select_wrapper">
+            <tr>
+              <td>
+                  <section class="number_select">
+                    <p>ゲーム分野</p>
+                    <input type="number" name="game" min="0" max="3" value="0" step="1" required>名
+                  </section>
+              </td>
+              <td>
+                  <section class="number_select">
+                    <p>デジタル映像分野</p>
+                    <input type="number" name="digital_movie" min="0" max="3" value="0" step="1" required>名
+                  </section>
+              </td>
+              <td>
+                  <section class="number_select">
+                    <p>サウンド分野</p>
+                    <input type="number" name="sound" min="0" max="3" value="0" step="1" required>名
+                  </section>
+              </td>
+            </tr>
+        </table>
+        </div>
+        <!-- HAL東京2 -->
+        <div class="tab_content" id="haltokyo2_content">
+          <div class="tab_content_description">
+            <p class="c-txtsp">各分野ごとに、見学予定人数を入力してください。
+                <small>※一人の方が複数の分野を見学される場合は、各々の分野にのべ人数としてカウントしてください</small></p>
+          </div>
+          <table class="number_select_wrapper">
+            <tr>
+              <td>
+                  <section class="number_select">
+                    <p>グラフィックデザイン分野</p>
+                    <input type="number" name="graphic_design" min="0" max="3" value="0" step="1" required>名
+                  </section>
+              </td>
+              <td>
+                <section class="number_select">
+                  <p>情報処理システム分野</p>
+                  <input type="number" name="info_system" min="0" max="3" value="0" step="1" required>名
+                </section>
+            </td>
+            <td>
+                <section class="number_select">
+                    <p>WEB開発分野</p>
+                    <input type="number" name="web" min="0" max="3" value="0" step="1" required>名
+                </section>
+                </td>
+                <td>
+                <section class="number_select">
+                    <p>制御系システム分野</p>
+                    <input type="number" name="control_system" min="0" max="3" value="0" step="1" required>名
+                </section>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <section class="number_select">
+                    <p>カーデザイン分野</p>
+                    <input type="number" name="car_design" min="0" max="3" value="0" step="1" required>名
+                </section>
+              </td>
+            </tr>
+        </table>
+        </div>
+    </form>
+    <table class="form-table">
+        <tbody>
+          <tr>
+            <th class="th_title"><h1>企業情報を入力してください。</h1></th>
+            <td><p>※全項目必須</p></td>
+          </tr>
+          <tr>
+             <th>会社名</th>
+             <td><input type="text" name="name" size="60" value="" placeholder="（例）HAL株式会社">
+             </td>
+          </tr>
+          <tr>
+            <th class="none">会社名（かな）</th>
+            <td><input type="text" name="name" size="60" value="" placeholder="（例）はるかぶしきがいしゃ">
+            </td>
+          </tr>
+          <tr>
+            <th>郵便番号（半角数字7桁）</th>
+            <td>
+            <input type="text" name="zip11" size="10" maxlength="8" placeholder="（例）123-4567　又は　1234567" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');">
+          </tr>
+          <tr>
+            <th>所在地</th>
+            <td><input type="text" name="addr11" cols="30" rows="10" size="60" placeholder="（例）東京都新宿区西新宿1-7-3 総合校舎コクーンタワー">
+            </td>
+          </tr>
+          <tr>
+            <th>代表者氏名</th>
+            <td><input type="text" name="name" size="60" value="" placeholder="（例）山田 太郎">
+            </td>
+          </tr>
+          <tr>
+            <th>代表者氏名（かな）</th>
+            <td><input type="text" name="name_kana" size="60" value="" placeholder="（例）やまだ たろう">
+            </td>
+          </tr>
+          <tr>
+            <th>代表者部署名</th>
+            <td><input type="text" name="name" size="60" value="" placeholder="（例）人事部">
+            </td>
+         </tr>
+          <tr>
+            <th>メールアドレス（連絡用）</th>
+            <td><input type="text" name="email" size="60" value="" placeholder="（例）sample@sample.jp">
+            </td>
+          </tr>
+          <tr>
+            <th>電話番号（連絡用）</th>
+            <td><input type="text" name="tel" size="60" value="" placeholder="（例）03-1234-5678">
+            </td>
+          </tr>
+          <tr>
+            <th>同伴者有無</th>
+            <td><label class="redio_text"><input class="redio_button" type="radio" name="entryPlan" value="hoge1" onclick="entryChange1();"  checked="checked">有</label>
+                <label><input class="redio_button" type="radio" name="entryPlan" value="hoge2" onclick="entryChange1();" />無</label>
+            </td>
+          </tr>
+          <tr id="firstBox">
+            <th>同伴者氏名</th>
+            <td><input type="text" placeholder="（例）山田 二郎"/></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="button_wrapper"><input type="submit" value="送信する" class="button"></div>
+</main>
+</body>
+
+</html>
