@@ -350,10 +350,10 @@ textarea::placeholder {
 .button {
   display       : inline-block;
   border-radius : 4%;          /* 角丸       */
-  font-size     : 14pt;        /* 文字サイズ */
+  font-size     : 12pt;        /* 文字サイズ */
   text-align    : center;      /* 文字位置   */
   cursor        : pointer;     /* カーソル   */
-  padding       : 17px 23px;   /* 余白       */
+  padding       : 18px 24px;   /* 余白       */
   background    : #1f3a9d;     /* 背景色     */
   color         : #ffffff;     /* 文字色     */
   line-height   : 1em;         /* 1行の高さ  */
